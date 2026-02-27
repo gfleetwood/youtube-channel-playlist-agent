@@ -6,7 +6,7 @@
 Id: 1
 Name: bloomberg-tech
 URL: https://www.youtube.com/@BloombergTechnology/videos
-LastRun: 2026-02-27 03:18:21
+LastRun: 2026-02-21 03:18:21
 Prompt: 
 + Go to: {{URL}}
 + Return a link to all the long form videos on the channel along with their titles since: {{time_stamp}}
@@ -15,7 +15,7 @@ Id: 2
 Name: gab-jules-podcast
 URL: https://www.youtube.com/@ESPNFC/videos
 UrlAlt: # https://www.youtube.com/playlist?list=PLVWqRc88TLrC5Oa9C1Bh2ZQw1PPtL13Kq
-LastRun: 2026-02-27 03:19:26
+LastRun: 2026-02-21 03:19:26
 Prompt: 
 + Go to: {{URL}}
 + And return a link to the last Gab and Jules podcast on the channel along with its title since: {{time_stamp}}
@@ -23,7 +23,7 @@ Prompt:
 Id: 3
 Name: odd-lots-podcast
 URL: https://www.youtube.com/playlist?list=PLe4PRejZgr0MuA6M0zkZyy-99-qc87wKV
-LastRun: 2026-02-27 03:20:12
+LastRun: 2026-02-21 03:20:12
 Prompt: 
 + Go to: {{URL}}
 + And return a link to the last episode on the playlist along with its title since: {{time_stamp}}
