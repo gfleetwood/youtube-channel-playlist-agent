@@ -1,12 +1,11 @@
 services:
 - type: cron
   name: youtube-channel-playlist-agent
-  runtime: python
+  runtime: docker
   repo: https://github.com/gfleetwood/youtube-channel-playlist-agent
   plan: starter
   envVars:
   - fromGroup: youtube-channel-playlist-agent
   region: oregon
-  buildCommand: apt install recutils && pip install -r requirements.txt
-  startCommand: python app.py
+  dockerfilePath: ./Dockerfile
   schedule: "0 */12 * * *"
