@@ -1,10 +1,12 @@
 services:
-  - type: cron
-    name: youtube-channel-playlist-agent
-    runtime: python
-    envVars:
-    - fromGroup: youtube-channel-playlist-agent
-    schedule: "0 */3 * * *"
-    buildCommand: pip install -r requirements.txt
-    startCommand: python app.py
-
+- type: cron
+  name: youtube-channel-playlist-agent
+  runtime: python
+  repo: https://github.com/gfleetwood/youtube-channel-playlist-agent
+  plan: starter
+  envVars:
+  - fromGroup: youtube-channel-playlist-agent
+  region: oregon
+  buildCommand: pip install -r requirements.txt
+  startCommand: python app.py
+  schedule: "0 */3 * * *"
