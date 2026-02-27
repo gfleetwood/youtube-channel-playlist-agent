@@ -14,6 +14,7 @@ Prompt:
 Id: 2
 Name: gab-jules-podcast
 URL: https://www.youtube.com/@ESPNFC/videos
+UrlAlt: # https://www.youtube.com/playlist?list=PLVWqRc88TLrC5Oa9C1Bh2ZQw1PPtL13Kq
 LastRun: 2026-02-27 03:19:26
 Prompt: 
 + Go to: {{URL}}
@@ -26,3 +27,19 @@ LastRun: 2026-02-27 03:20:12
 Prompt: 
 + Go to: {{URL}}
 + And return a link to the last episode on the playlist along with its title since: {{time_stamp}}
+
+#Id: 4
+#Name: two-robbies-podcast
+#URL: https://www.youtube.com/playlist?list=PLXEMPXZ3PY1grU0FxarRWzu9AK3k8XQEh
+#LastRun: 2026-02-27 03:20:12
+#Prompt: 
+#+ Go to: {{URL}}
+#+ And return a link to the last episode on the playlist along with its title since: {{time_stamp}}
+
+#Id: 5
+#Name: epl-matchday-goals
+#URL: https://www.youtube.com/@NBCSports/videos
+#LastRun: 2026-02-27 03:20:12
+#Prompt: 
+#+ Go to: {{URL}}
+#+ And return a link to every 'Every Premier League goal' related video released since: {{time_stamp}}

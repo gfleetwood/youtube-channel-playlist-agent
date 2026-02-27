@@ -21,11 +21,13 @@ if __name__ == "__main__":
     for item in tasks:
 
         now = datetime.now()
+        prompt = item["prompt"]
+        print(prompt)
 
         result = CLIENT.agents.hyper_agent.start_and_wait(
             params=StartHyperAgentTaskParams(
                 version="1.1.0",
-                task=item["prompt"],
+                task=prompt,
                 llm="gpt-4.1-mini",
                 max_steps=100,
                 schema={
