@@ -7,7 +7,7 @@ from functions import rec_read, rec_create, rec_update, rec_delete, extract_and_
 from jinja2 import Template
 
 CLIENT = Hyperbrowser(api_key=os.getenv("HYPERBROWSER_API_KEY"))
-DB = "/etc/secrets/tasks.rec"
+DB = "tasks.rec"
 REC_TYPE = "Task"
 
 if __name__ == "__main__":
