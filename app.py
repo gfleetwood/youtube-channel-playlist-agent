@@ -39,12 +39,9 @@ if __name__ == "__main__":
                     },
                     "required": ["title", "url", "duration"],
                 }
-                
             )
         )
 
-        #print(f"Output:\n{result.data.final_result}")
-        #print(extract_and_parse_dict(result.data.final_result))
-
-        send_email(TO_EMAIL, item['task']['Name'], extract_and_parse_dict(result.data.final_result))
+        print(result.data.final_result)
+        send_email(TO_EMAIL, item['task']['Name'], result.data.final_result)
         rec_update(DB, REC_TYPE, f"Name = '{item['task']['Name']}'", LastRun=now.strftime('%Y-%m-%d %H:%M:%S'))

@@ -84,7 +84,7 @@ def build_html(body):
 
 def send_email(to_email, subject, body, pdf_file_path=None):
 
-    html = build_html(body)
+    html = body #build_html(body)
 
     if pdf_file_path is not None:
         with open(pdf_file_path, "rb") as f:
