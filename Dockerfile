@@ -12,5 +12,5 @@ RUN pip install --no-cache-dir -r requirements.txt awscli
 COPY . .
 
 # download->run->upload
-CMD aws s3 cp s3://test-34555454545/tasks.rec . && python app.py && aws s3 cp tasks.rec s3://test-34555454545/tasks.rec
+CMD aws s3 cp s3://test-34555454545/texul/tasks.rec . && python app.py && aws s3 cp tasks.rec s3://test-34555454545/texul/tasks.rec
 
